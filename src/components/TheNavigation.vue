@@ -1,6 +1,6 @@
 <template>
   
-    <nav class="container mx-auto py-4 w-full" :class="{'fixed top-0 left-0 right-0 bg-white shadow-lg': isScrollingUp}">
+    <nav class="container mx-auto py-4 w-full">
       <div class="flex items-center justify-between">
       <div class="text-2xl font-bold mr-20"> 
         <img src="/formcarry_logo.svg" alt="formcarry." width="159" height="32" style="cursor: pointer;">

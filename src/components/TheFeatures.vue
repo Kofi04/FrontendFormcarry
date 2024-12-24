@@ -1,7 +1,9 @@
-<script setup lang="ts">
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-</script>
 
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const openTab = ref(0);
+</script>
 
 <template>
     <section class="container mx-auto px-6 py-16">
@@ -20,13 +22,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
           
 <!-- component -->
 <div class=" font-sans flex h-screen items-center justify-center">
-    <div x-data="{ openTab: 1 }" class="p-">
+    <div x-data="{ openTab: 1 }" class="p-4">
         <div class="max-w-lg mx-auto">
             <div class="mb-6 flex space-x-1 p-2 bg-white rounded-lg shadow-md">
                 <button x-on:click="openTab = 1" :class="{ 'bg-blue-600 text-white': openTab === 1 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">
                   <div class="flex items-center space-x-2">
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 4L6.27343 18.4054L11.9884 20L17.7266 18.3977L19 4H5ZM7.60088 6.9441H16.3837L16.2216 8.70977H9.5226L9.68468 10.5182H16.0634L15.581 15.9397L12 16.941V16.9509L8.40353 15.9397L8.15656 13.1667H9.91621L10.0397 14.5785L11.9961 15.1064L13.9487 14.5785L14.1533 12.2839H11.9923V12.28H8.07938L7.60088 6.9441Z" fill="#6C6F93"></path></svg>
-                  <p type="button" color="500" class="sc-db2ccae4-0 dPogiQ inline-block">HTML</p>
+                  <p class=" inline-block">HTML</p>
                   </div>
                 </button>
                 <button x-on:click="openTab = 2" :class="{ 'bg-blue-600 text-white': openTab === 2 }" class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300">
