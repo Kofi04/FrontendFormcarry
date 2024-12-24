@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    
+      "types": ["vite/client"], 
     "target": "esnext",
     "module": "esnext",
     "strict": true,
