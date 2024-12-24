@@ -1,0 +1,45 @@
+@import './base.css';
+
+@font-face {
+  font-family: 'Faktum';
+  src: url('@/assets/fonts/Rene Bieder - Faktum Test Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Faktum';
+  src: url('@/assets/fonts/Rene Bieder - Faktum Test Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+#app {
+  
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(247, 249, 252);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: rgb(247, 249, 252);
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  
+}
