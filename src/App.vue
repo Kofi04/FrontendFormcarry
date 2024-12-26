@@ -1,17 +1,17 @@
 <template>
   <div class="min-h-screen bg-white">
-    <TheNavigation />
-    <TheHero />
-    <TheBrands />
-    <TheFeatures />
-    <TheGrid />
+    <TheNavigation class="mb-8" />
+    <TheHero class="px-4 sm:px-8 lg:px-16" />
+    <TheBrands class="px-4 sm:px-8 lg:px-16" />
+    <TheFeatures class="px-4 sm:px-8 lg:px-16 my-12" />
+    <TheGrid class="px-4 sm:px-8 lg:px-16 my-16" />
     <br>
     <br>
-     <LastCard />
-     <Footer />
-   
+    <LastCard class="px-4 sm:px-8 lg:px-16" />
+    <Footer class="px-4 sm:px-8 lg:px-16" />
   </div>
 </template>
+
 
 <script setup>
 import TheNavigation from './components/TheNavigation.vue'

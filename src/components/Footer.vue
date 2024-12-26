@@ -133,10 +133,7 @@ const socialLinks = [
     </div>
 </footer>
 
-</template>
-
-<style scoped>
-
+</template><style scoped>
 .footer {
   padding: 4rem 2rem 2rem;
   background-color: #fff;
@@ -152,24 +149,21 @@ const socialLinks = [
 }
 
 .footer-section h3 {
-    font-size: 16px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 1rem;
   color: rgb(14, 11, 61); 
-    
-    line-height: 32px;
-    letter-spacing: -0.01em;
-    margin: 0px;
-   
-    font-family: Inter, Helvetica, Arial, sans-serif;
-    word-break: normal;
-    text-decoration: none;
-    text-transform: none;
-    white-space: normal;
-    cursor: inherit;
-    appearance: none;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  margin: 0px;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  word-break: normal;
+  text-decoration: none;
+  text-transform: none;
+  white-space: normal;
+  cursor: inherit;
+  appearance: none;
 }
-
 
 .footer-section ul {
   list-style: none;
@@ -177,15 +171,13 @@ const socialLinks = [
   margin: 0;
 }
 
-
 .footer-section li {
-    
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.01em;
-    margin: 0px;
-    font-weight: 400;
-    font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  margin: 0px;
+  font-weight: 400;
+  font-family: Inter, Helvetica, Arial, sans-serif;
   margin-bottom: 0.5rem;
   color: #666;
 }
@@ -233,6 +225,7 @@ const socialLinks = [
   text-decoration: none;
 }
 
+/* Small screens (tablets, smartphones) */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
@@ -243,11 +236,44 @@ const socialLinks = [
     gap: 1rem;
     text-align: center;
   }
+
+  .footer-section ul {
+    padding-left: 1rem;
+  }
+
+  .footer-section li {
+    font-size: 13px;
+  }
 }
 
+/* Extra small screens (mobile phones) */
 @media (max-width: 480px) {
   .footer-content {
     grid-template-columns: 1fr;
   }
+
+  .footer-section h3 {
+    font-size: 14px;
+  }
+
+  .footer-section li {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 0.5rem;
+  }
 }
+
 </style>
