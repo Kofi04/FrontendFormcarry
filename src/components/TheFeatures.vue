@@ -20,52 +20,60 @@ const openTab = ref(0);
       <br />
       Within literally just 3 minutes, you can have a fully functional form for any platform.
     </p>
-    
-    <!-- Tab component -->
-    <div class="font-sans flex flex-col sm:flex-row items-center justify-center">
-      <div x-data="{ openTab: 1 }" class="p-4">
-        <div class="mb-6 flex space-x-1 p-2 bg-white rounded-lg shadow-md">
-          <button
-            x-on:click="openTab = 1"
-            :class="{ 'bg-blue-600 text-white': openTab === 1 }"
-            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
-          >
-            <div class="flex items-center space-x-2">
-              <img src="/html.svg" alt="" />
-              <p>HTML</p>
-            </div>
-          </button>
-          <button
-            x-on:click="openTab = 2"
-            :class="{ 'bg-blue-600 text-white': openTab === 2 }"
-            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
-          >
-            <div class="flex items-center space-x-2">
-              <img src="/Jquery.svg" alt="" />
-              <p>jQuery</p>
-            </div>
-          </button>
-          <button
-            x-on:click="openTab = 3"
-            :class="{ 'bg-blue-600 text-white': openTab === 3 }"
-            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
-          >
-            <div class="flex items-center space-x-2">
-              <img src="/react.svg" alt="" />
-              <p>React</p>
-            </div>
-          </button>
-          <button
-            x-on:click="openTab = 4"
-            :class="{ 'bg-blue-600 text-white': openTab === 4 }"
-            class="flex-1 py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300"
-          >
-            <div class="flex items-center space-x-2">
-              <img src="/vue.svg" alt="" />
-              <p>Vue</p>
-            </div>
-          </button>
+<!-- Tab component -->
+<div class="font-sans flex flex-col sm:flex-row items-center justify-center">
+  <div x-data="{ openTab: 1 }" class="p-4 w-full max-w-[1200px]">
+    <!-- Onglets -->
+    <div class="mb-6 flex flex-wrap space-x-1 p-2 bg-white rounded-lg shadow-md">
+      <!-- Onglet HTML -->
+      <button
+        x-on:click="openTab = 1"
+        :class="{ 'bg-blue-600 text-white': openTab === 1 }"
+        class="flex-1 sm:flex-none py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 mb-2 sm:mb-0"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="/html.svg" alt="" />
+          <p>HTML</p>
         </div>
+      </button>
+      
+      <!-- Onglet jQuery -->
+      <button
+        x-on:click="openTab = 2"
+        :class="{ 'bg-blue-600 text-white': openTab === 2 }"
+        class="flex-1 sm:flex-none py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 mb-2 sm:mb-0"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="/Jquery.svg" alt="" />
+          <p>jQuery</p>
+        </div>
+      </button>
+      
+      <!-- Onglet React -->
+      <button
+        x-on:click="openTab = 3"
+        :class="{ 'bg-blue-600 text-white': openTab === 3 }"
+        class="flex-1 sm:flex-none py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 mb-2 sm:mb-0"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="/react.svg" alt="" />
+          <p>React</p>
+        </div>
+      </button>
+      
+      <!-- Onglet Vue -->
+      <button
+        x-on:click="openTab = 4"
+        :class="{ 'bg-blue-600 text-white': openTab === 4 }"
+        class="flex-1 sm:flex-none py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 mb-2 sm:mb-0"
+      >
+        <div class="flex items-center space-x-2">
+          <img src="/vue.svg" alt="" />
+          <p>Vue</p>
+        </div>
+      </button>
+    </div> 
+  
 
         <!-- Tab Content -->
         <div class="max-w-2xl mx-auto mt-12 relative w-full h-96 overflow-y-auto p-4">
